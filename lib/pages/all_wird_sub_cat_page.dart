@@ -87,8 +87,8 @@ class _AllWirdSubCatPageState extends State<AllWirdSubCatPage> {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) =>
-                        AllWirdsPage(list.wird_cat_id, list.wird_sub_cat_id)));
+                    builder: (context) => AllWirdsPage(list.wird_cat_id,
+                        list.wird_sub_cat_id, list.wird_sub_cat_title)));
           },
         ),
       );

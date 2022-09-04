@@ -105,6 +105,7 @@ class _AthkarsPageState extends State<AthkarsPage> {
             Expanded(
               child: ListView.builder(
                 itemCount: list_wird_category.length,
+                // scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   final single_wird_category = list_wird_category[index];
                   return buildWirdCategoryList(single_wird_category, context);
