@@ -23,10 +23,14 @@ class _AllWirdSubCatPageState extends State<AllWirdSubCatPage> {
   void initState() {
     super.initState();
     // final subwirds = allSubWird.where((e) => e['wird_id'] == '1');
-    subwirds = all_wird_sub_cats.where((list) {
-      final wirdLower = list.wird_cat_id.toLowerCase();
-      return wirdLower.contains(widget.wird_cat_id);
-    }).toList();
+    // subwirds = all_wird_sub_cats.where((list) {
+    //   final wirdLower = list.wird_cat_id.toLowerCase();
+    //   return wirdLower.contains(widget.wird_cat_id);
+    // }).toList();
+
+    subwirds = all_wird_sub_cats
+        .where((medium) => medium.wird_cat_id == widget.wird_cat_id)
+        .toList();
 
     // subwirds = allSubWird.where((e) => e["wird_id"] = 10).toList();
   }
@@ -87,8 +91,11 @@ class _AllWirdSubCatPageState extends State<AllWirdSubCatPage> {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => AllWirdsPage(list.wird_cat_id,
-                        list.wird_sub_cat_id, list.wird_sub_cat_title)));
+                    builder: (context) => AllWirdsPage(
+                        list.wird_cat_id,
+                        list.wird_sub_cat_id,
+                        list.wird_sub_cat_title,
+                        list.wird_audio_link)));
           },
         ),
       );

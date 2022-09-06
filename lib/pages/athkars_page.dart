@@ -142,6 +142,14 @@ class _AthkarsPageState extends State<AthkarsPage> {
           contentPadding:
               const EdgeInsets.only(left: 10, right: 10, top: 0, bottom: 0),
           leading: test(single_wird_category.wird_cat_id, context),
+          // leading: Text(
+          //   translation(context).wird_cat_id_ +
+          //       single_wird_category.wird_cat_id,
+          //   style: const TextStyle(
+          //       fontSize: 15,
+          //       color: Color.fromARGB(255, 6, 20, 97),
+          //       fontWeight: FontWeight.w400),
+          // ),
           trailing: const Icon(
             Icons.star_sharp,
             color: Color.fromARGB(255, 6, 20, 97),
@@ -180,7 +188,7 @@ class _AthkarsPageState extends State<AthkarsPage> {
     switch (wird_cat_id) {
       case '1':
         return Text(
-          translation(context).wird_cat_id_title_1,
+          translation(context).wird_cat_id_1,
           style: const TextStyle(
               fontSize: 15,
               color: Color.fromARGB(255, 6, 20, 97),
@@ -189,7 +197,7 @@ class _AthkarsPageState extends State<AthkarsPage> {
 
       case '2':
         return Text(
-          translation(context).wird_cat_id_title_2,
+          translation(context).wird_cat_id_2,
           style: const TextStyle(
               fontSize: 15,
               color: Color.fromARGB(255, 6, 20, 97),
@@ -198,7 +206,7 @@ class _AthkarsPageState extends State<AthkarsPage> {
 
       case '3':
         return Text(
-          translation(context).wird_cat_id_title_3,
+          translation(context).wird_cat_id_3,
           style: const TextStyle(
               fontSize: 15,
               color: Color.fromARGB(255, 6, 20, 97),
@@ -207,7 +215,7 @@ class _AthkarsPageState extends State<AthkarsPage> {
 
       case '4':
         return Text(
-          translation(context).wird_cat_id_title_4,
+          translation(context).wird_cat_id_4,
           style: const TextStyle(
               fontSize: 15,
               color: Color.fromARGB(255, 6, 20, 97),
@@ -216,7 +224,7 @@ class _AthkarsPageState extends State<AthkarsPage> {
 
       case '5':
         return Text(
-          translation(context).wird_cat_id_title_5,
+          translation(context).wird_cat_id_5,
           style: const TextStyle(
               fontSize: 15,
               color: Color.fromARGB(255, 6, 20, 97),
@@ -225,7 +233,7 @@ class _AthkarsPageState extends State<AthkarsPage> {
 
       case '6':
         return Text(
-          translation(context).wird_cat_id_title_6,
+          translation(context).wird_cat_id_6,
           style: const TextStyle(
               fontSize: 15,
               color: Color.fromARGB(255, 6, 20, 97),
@@ -234,7 +242,7 @@ class _AthkarsPageState extends State<AthkarsPage> {
 
       case '7':
         return Text(
-          translation(context).wird_cat_id_title_7,
+          translation(context).wird_cat_id_7,
           style: const TextStyle(
               fontSize: 15,
               color: Color.fromARGB(255, 6, 20, 97),
@@ -243,7 +251,7 @@ class _AthkarsPageState extends State<AthkarsPage> {
 
       case '8':
         return Text(
-          translation(context).wird_cat_id_title_8,
+          translation(context).wird_cat_id_8,
           style: const TextStyle(
               fontSize: 15,
               color: Color.fromARGB(255, 6, 20, 97),
@@ -252,7 +260,7 @@ class _AthkarsPageState extends State<AthkarsPage> {
 
       case '9':
         return Text(
-          translation(context).wird_cat_id_title_9,
+          translation(context).wird_cat_id_9,
           style: const TextStyle(
               fontSize: 15,
               color: Color.fromARGB(255, 6, 20, 97),
@@ -261,7 +269,7 @@ class _AthkarsPageState extends State<AthkarsPage> {
 
       case '10':
         return Text(
-          translation(context).wird_cat_id_title_10,
+          translation(context).wird_cat_id_10,
           style: const TextStyle(
               fontSize: 15,
               color: Color.fromARGB(255, 6, 20, 97),
