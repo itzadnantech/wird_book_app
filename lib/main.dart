@@ -4,6 +4,7 @@ import 'package:wird_book_app/router/custom_router.dart';
 import 'package:wird_book_app/router/route_constants.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/services.dart';
+import 'package:wird_book_app/pages/athkars_page.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -47,6 +48,12 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'Localization',
       debugShowCheckedModeBanner: false,
+      // builder: (context, child) {
+      //   return const Directionality(
+      //     textDirection: TextDirection.rtl,
+      //     child: AthkarsPage(),
+      //   );
+      // },
       theme: ThemeData(primaryColor: Colors.cyan[900]),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,

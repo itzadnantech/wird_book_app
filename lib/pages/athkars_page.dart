@@ -23,12 +23,17 @@ class _AthkarsPageState extends State<AthkarsPage> {
 
   late List<Wird_Category> list_wird_category;
   String query = '';
+  Locale? _locale;
+  final Future<Locale> test_value = getLocale();
 
   @override
   void initState() {
     super.initState();
-
     list_wird_category = all_wird_cats;
+  }
+
+  void foo() async {
+    final testt = await getLocale();
   }
 
   @override
@@ -142,14 +147,6 @@ class _AthkarsPageState extends State<AthkarsPage> {
           contentPadding:
               const EdgeInsets.only(left: 10, right: 10, top: 0, bottom: 0),
           leading: test(single_wird_category.wird_cat_id, context),
-          // leading: Text(
-          //   translation(context).wird_cat_id_ +
-          //       single_wird_category.wird_cat_id,
-          //   style: const TextStyle(
-          //       fontSize: 15,
-          //       color: Color.fromARGB(255, 6, 20, 97),
-          //       fontWeight: FontWeight.w400),
-          // ),
           trailing: const Icon(
             Icons.star_sharp,
             color: Color.fromARGB(255, 6, 20, 97),
